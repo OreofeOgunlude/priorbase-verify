@@ -1,0 +1,36 @@
+{
+  "name": "priorbase-verify",
+  "version": "2.1.0",
+  "description": "Checks a Priorbase record and the signed PDFs made from it, offline, without trusting Priorbase.",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "priorbase-verify": "dist/cli.js"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/OreofeOgunlude/priorbase.git",
+    "directory": "packages/priorbase-verify"
+  },
+  "keywords": [
+    "priorbase",
+    "verify",
+    "audit",
+    "hash chain",
+    "rfc3161",
+    "process safety"
+  ]
+}

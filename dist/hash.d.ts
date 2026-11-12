@@ -1,0 +1,26 @@
+export declare const GENESIS: Buffer<ArrayBuffer>;
+export declare function canonical(fields: (string | null | undefined)[]): string;
+export type RecordEvent = {
+    format_version: number;
+    workspace_id: string;
+    chain_id?: string | null;
+    seq: number;
+    created_at_utc: string;
+    actor_id: string | null;
+    actor_email: string | null;
+    actor_role?: string | null;
+    session_id?: string | null;
+    app_version?: string | null;
+    undoes_event_id?: string | null;
+    kind: string;
+    study_id: string | null;
+    revision_id: string | null;
+    target_type: string;
+    target_id: string | null;
+    payload: string;
+    prev_hash: string;
+    hash: string;
+    redacted?: boolean;
+};
+export declare function hashedFields(e: RecordEvent): (string | null)[];
+export declare function eventHash(e: RecordEvent): Buffer;

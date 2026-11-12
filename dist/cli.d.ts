@@ -1,0 +1,2 @@
+#!/usr/bin/env node
+export declare const VERSION = "2.1.0";
